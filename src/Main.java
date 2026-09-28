@@ -73,6 +73,17 @@ public class Main {
     // Задача 4
     public static void task4() {
         System.out.println("Task 4");
+        int [] inputArray4 = {-100, 0, 100, 200, 300};
+        boolean outputArray4 = true;
+        for (int remain : inputArray4) {
+            if (remain < 0) {
+                outputArray4 = false;
+                break;
+            }
+        }
+        System.out.println(Arrays.toString(inputArray4));
+        System.out.println(outputArray4);
+
     }
 
     // Задача 5
