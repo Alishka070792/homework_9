@@ -58,6 +58,16 @@ public class Main {
     // Задача 3
     public static void task3() {
         System.out.println("Task 3");
+        int [] inputArray3 = {1000, 2000, 3000, 4000, 5000};
+        boolean [] outputArray3 = new boolean[inputArray3.length];
+        int index = 0;
+        for (int bonus : inputArray3) {
+            outputArray3 [index] = bonus > 5000;
+            index ++;
+        }
+        System.out.println(Arrays.toString(inputArray3));
+        System.out.println(Arrays.toString(outputArray3));
+        System.out.println();
     }
 
     // Задача 4
