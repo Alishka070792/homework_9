@@ -58,16 +58,47 @@ public class Main {
     // Задача 3
     public static void task3() {
         System.out.println("Task 3");
+        int[] inputArray3 = {1000, 2000, 3000, 4000, 5000};
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+        int index = 0;
+        for (int bonus : inputArray3) {
+            outputArray3[index] = bonus > 5000;
+            index++;
+        }
+        System.out.println(Arrays.toString(inputArray3));
+        System.out.println(Arrays.toString(outputArray3));
+        System.out.println();
     }
 
     // Задача 4
     public static void task4() {
         System.out.println("Task 4");
+        int[] inputArray4 = {-100, 0, 100, 200, 300};
+        boolean outputArray4 = true;
+        for (int remain : inputArray4) {
+            if (remain < 0) {
+                outputArray4 = false;
+                break;
+            }
+        }
+        System.out.println(Arrays.toString(inputArray4));
+        System.out.println(outputArray4);
+        System.out.println();
     }
 
     // Задача 5
     public static void task5() {
         System.out.println("Task 5");
+        int[] inputArray5 = {100, 200, 300, 400, 500};
+        int monthProfit = 0;
+        for (int profit : inputArray5) {
+            if (profit > 0) {
+                monthProfit++;
+            }
+        }
+        int[] outputArray5 = {monthProfit};
+        System.out.println("Количество прибыльных месяцев:" + Arrays.toString(outputArray5));
+        System.out.println(Arrays.toString(inputArray5));
 
     }
 
